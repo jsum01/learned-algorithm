@@ -46,12 +46,12 @@ A.bitCount() // A를 이진수로 변환했을 때 1의 개수 반환
 ```java
   BigInteger num = new BigInteger("10000");	// 선언
 
-  int int_num = num.intValue();		// int
-  long long_num = num.longValue();	// long
-  float f_num = num.floatValue();		// float
-  double d_num = num.doubleValue();	// double
-  String s10_num = num.toString();		// 10진수 String <- 이것만 다름!!
-  String s2_num = num.toString(2);   // 2진수 String -> 괄호 안에 2,8,16 가능
+  int int_num = num.intValue(); // int
+  long long_num = num.longValue(); // long
+  float f_num = num.floatValue(); // float
+  double d_num = num.doubleValue(); // double
+  String s10_num = num.toString(); // 10진수 String <- 이것만 다름!!
+  String s2_num = num.toString(2); // 2진수 String -> 괄호 안에 2,8,16 가능
 ```
 - `Exact` 형변환
   메서드 이름 끝에 `Exact`를 붙일 경우 형변환 결과가 해당 타입의 범위에 속하지 않으면 Exception을 발생시킴. (ex. `intValueExact()`)
