@@ -18,23 +18,29 @@ BigInteger num = new BigInteger("10000"); // 초기 인자: String
     BigInteger.TWO.multiply(BigInteger.TWO); // 2 x 2
     ```
 ### 연산
-- A + B = A.add(B)
-- A - B = A.subtract(B)
-- A * B = A.multiply(B)
-- A / B = A.divide(B)
-- A % B = A.remainder(B)
-- A^B(제곱) = A.pow(B)
-- A 제곱근 B = A.sqrt(B)
+```java
+A.add(B) // A + B
+A.subtract(B) // A - B
+A.multiply(B) // A * B
+A.divide(B) // A / B
+A.remainder(B) // A % B
+A.pow(B) // A^B(제곱)
+A.sqrt(B) // A 제곱근 B
+```
 ### 비교
 Math 클래스 안에 있으며 String으로 내부 동작이 진행되기 때문에 BigInteger 자료형은 Math와 String에 있는 메서드와 유사한 메서드를 제공한다.
-- A.equals(B): 두 값이 같은지 비교
-- A.compareTo(B): 
+```java
+A.equals(B) // 두 값이 같은지 비교
+A.compareTo(B)
+  /* 
     - A > B: 1
     - A = B: 0
     - A < B: -1
-- A.max(B): 두 값 중 큰 값 반환
-- A.min(B): 두 값 중 작은 값 반환
-- A.bitCount(): A를 이진수로 변환했을 때 1의 개수 반환
+  */
+A.max(B) // 두 값 중 큰 값 반환
+A.min(B) // 두 값 중 작은 값 반환
+A.bitCount() // A를 이진수로 변환했을 때 1의 개수 반환
+```
 ### 형변환
 - BigInteger to another(`.자료형+Value`)
 ```java
